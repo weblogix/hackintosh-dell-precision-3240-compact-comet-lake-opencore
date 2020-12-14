@@ -58,7 +58,7 @@ Update the following settings in BIOS:
 | Graphics  | Intel UHD 630                      |
 | Ethernet  | Intel I219-LM                      |
 | NVME      | WD SN550 (2)                       |
-| SSD       | ST2000LM007 (Fusion drive)         |
+| HDD       | ST2000LM007 (Fusion drive)         |
 | Memory    | Crucial 32GB Kit (16GB x 2) DDR4 3200 MT/s (PC4-25600) |
 | Sound     | ALC3246 (ALC256)                   |
 | Wireless  | BCM94360NG                         |
