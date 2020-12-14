@@ -1,11 +1,11 @@
-# Opencore Configurations for Hackintosh on Dell Precision 3240 Compact PC
+# Hackintosh on Dell Precision 3240 Compact PC (OpenCore)
 
-Originally forked from [https://github.com/billzhong/dell-precision-3240-compact-hackintosh/blob/master/README.md](https://github.com/billzhong/dell-precision-3240-compact-hackintosh/)
+Originally forked from [dell-precision-3240-compact-hackintosh](https://github.com/billzhong/dell-precision-3240-compact-hackintosh/) and modified with my own preferred settings.
 
 ## Installation
 
 * Mount EFI Partition
-* Copy `EFI` folder to EFI Partition
+* Copy `EFI` folder to EFI Partition root `(/)`
 * Replace the following values in `EFI/OC/config.plist` with generated values from [GenSMBios](https://github.com/corpnewt/GenSMBIOS)
     * PlatformInfo --> Generic --> SystemSerialNumber
     * PlatformInfo --> Generic --> MLB
@@ -20,6 +20,7 @@ Update the following settings in BIOS with [RU.exe](http://ruexe.blogspot.com/) 
 | SaSetup       | 0xF5   | 0x2   | DVMT: 64M     |
 | CpuSetup      | 0x3E   | 0x0   | CFG Lock: OFF |
 
+
 Update the following settings in BIOS:
 
 | Item              | Value             |
@@ -33,7 +34,9 @@ Update the following settings in BIOS:
 | VT for Direct I/O | Disabled          |
 
 
+
 ## What works
+
 * OpenCore 0.6.4
 * Supported OS
     * macOS Catalina (10.15)
@@ -44,7 +47,7 @@ Update the following settings in BIOS:
 * Full Metal hardware acceleration
 * Sleep, wake and power nap
 * Audio - Internal Speaker, Displayport/HDMI, and front audio port
-* Airplay, Sidecard, Continuity, Airdrop and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
+* Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
 
 ## Tested Configuration
 
