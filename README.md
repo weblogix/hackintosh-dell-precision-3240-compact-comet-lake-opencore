@@ -37,10 +37,10 @@ Update the following settings in BIOS:
 
 ## What works
 
-* OpenCore
+* OpenCore 0.6.4
 * Supported OS
     * macOS Catalina (10.15)
-    * macOS Big Sur (11.2)
+    * macOS Big Sur (11.0.1)
 * All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
 * CPU Low Frequency mode set to `800Mhz` (via `CPUFriendFriend`) 
 * Intel UHD Graphics 630 - 4K UHD @ 60hz (Displayport)
