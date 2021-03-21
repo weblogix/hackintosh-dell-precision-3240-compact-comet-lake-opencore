@@ -1,4 +1,4 @@
-# Hackintosh on Dell Precision 3240 Compact PC (OpenCore)
+# Hackintosh on Dell Precision 3240 Compact PC (OpenCore) Comet-lake
 
 Originally forked from [dell-precision-3240-compact-hackintosh](https://github.com/billzhong/dell-precision-3240-compact-hackintosh/) and modified with my own preferred settings.
 
@@ -49,6 +49,9 @@ Update the following settings in BIOS:
 * Audio - Internal Speaker, Displayport/HDMI, and front audio port
 * Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
 
+## What's not working
+* Displayport audio does not work after waking up from sleep.  (I've tried `AppleALC` and all the ALC265 layouts without any success)
+
 ## Tested Configuration
 
 | Component | Tested                             |
@@ -63,9 +66,6 @@ Update the following settings in BIOS:
 | Sound     | ALC3246 (ALC256)                   |
 | Wireless  | BCM94360NG                         |
 
-
-## TODO
-* Replace `VoodooHDA.kext` with `AppleALC.kext` once its supported (I tried all the values for [`ALC256/ALC3246`](https://github.com/acidanthera/AppleALC/tree/master/Resources/ALC256) but none of them worked)
 
 
 
