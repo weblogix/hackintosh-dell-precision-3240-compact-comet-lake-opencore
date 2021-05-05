@@ -49,9 +49,6 @@ Update the following settings in BIOS:
 * Audio - Internal Speaker, Displayport/HDMI, and front audio port
 * Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
 
-## What's not working
-* Displayport audio does not work after waking up from sleep.  (I've tried `AppleALC` and all the ALC265 layouts without any success)
-
 ## Tested Configuration
 
 | Component | Tested                             |
