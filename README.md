@@ -37,17 +37,20 @@ Update the following settings in BIOS:
 
 ## What works
 
-* OpenCore
+* OpenCore (0.6.9)
 * Supported OS
+    * macOS Big Sur (11.4)
     * macOS Catalina (10.15)
-    * macOS Big Sur (11.2)
 * All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
-* CPU Low Frequency mode set to `800Mhz` (via `CPUFriendFriend`) 
 * Intel UHD Graphics 630 - 4K UHD @ 60hz (Displayport)
 * Full Metal hardware acceleration
 * Sleep, wake and power nap
 * Audio - Internal Speaker, Displayport/HDMI, and front audio port
 * Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
+
+## What doesn't work
+
+* Displayport audio stops working (disappears from Sound devices) after waking up from sleep
 
 ## Tested Configuration
 
