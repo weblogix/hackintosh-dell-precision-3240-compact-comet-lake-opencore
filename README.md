@@ -1,5 +1,23 @@
 # Hackintosh on Dell Precision 3240 Compact PC (OpenCore) Comet-lake
 
+## What works
+
+* OpenCore (0.7.0)
+* Supported OS
+    * macOS Big Sur (11.4)
+    * macOS Catalina (10.15)
+* All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
+* CPU Low Frequency mode set to `800Mhz` (via `CPUFriendFriend`) 
+* Intel UHD Graphics 630 - 4K UHD @ 60hz (Displayport)
+* Full Metal hardware acceleration
+* Sleep, wake and power nap
+* Audio - Internal Speaker, Displayport/HDMI, and front audio port
+* Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
+
+## What's not working
+
+Nothing!
+
 ## Installation
 
 * Mount EFI Partition
@@ -32,37 +50,9 @@ Update the following settings in BIOS:
 | VT for Direct I/O | Disabled          |
 
 
-## What works
-
-<<<<<<< HEAD
-* OpenCore (0.6.9)
-=======
-* OpenCore (0.7.0)
->>>>>>> aec5c17 (Opencore 0.7.0)
-* Supported OS
-    * macOS Big Sur (11.4)
-    * macOS Catalina (10.15)
-* All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
-* Intel UHD Graphics 630 - 4K UHD @ 60hz (Displayport)
-* Full Metal hardware acceleration
-* Sleep, wake and power nap
-* Audio - Internal Speaker, Displayport/HDMI, and front audio port
-* Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
-
-<<<<<<< HEAD
-## What doesn't work
-
-* Displayport audio stops working (disappears from Sound devices) after waking up from sleep
-=======
-## What's not working
-
-Nothing!
-
-
 ## Notes
 * HDMI/Displayport audio device would disappear after waking up from sleep.  This was resolved by [adding my monitor's EDID](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/edid-gen.sh) to Opencore.
 
->>>>>>> aec5c17 (Opencore 0.7.0)
 
 ## Tested Configuration
 
