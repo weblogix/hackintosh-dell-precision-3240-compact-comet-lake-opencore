@@ -1,7 +1,5 @@
 # Hackintosh on Dell Precision 3240 Compact PC (OpenCore) Comet-lake
 
-Originally forked from [dell-precision-3240-compact-hackintosh](https://github.com/billzhong/dell-precision-3240-compact-hackintosh/) and modified with my own preferred settings.
-
 ## Installation
 
 * Mount EFI Partition
@@ -34,7 +32,6 @@ Update the following settings in BIOS:
 | VT for Direct I/O | Disabled          |
 
 
-
 ## What works
 
 * OpenCore (0.6.9)
@@ -62,11 +59,13 @@ Update the following settings in BIOS:
 | Ethernet  | Intel I219-LM                      |
 | NVME      | WD SN550 (2)                       |
 | HDD       | ST2000LM007 (Fusion drive)         |
+| Display   | LG 43UD79-B 4K Monitor             |
 | Memory    | Crucial 32GB Kit (16GB x 2) DDR4 3200 MT/s (PC4-25600) |
 | Sound     | ALC3246 (ALC256)                   |
 | Wireless  | BCM94360NG                         |
 
 
-
+# Links
+* [dell-precision-3240-compact-hackintosh](https://github.com/billzhong/dell-precision-3240-compact-hackintosh/)
 
 
