@@ -1,7 +1,5 @@
 # Hackintosh on Dell Precision 3240 Compact PC (OpenCore) Comet-lake
 
-Originally forked from [dell-precision-3240-compact-hackintosh](https://github.com/billzhong/dell-precision-3240-compact-hackintosh/) and modified with my own preferred settings.
-
 ## Installation
 
 * Mount EFI Partition
@@ -34,10 +32,13 @@ Update the following settings in BIOS:
 | VT for Direct I/O | Disabled          |
 
 
-
 ## What works
 
+<<<<<<< HEAD
 * OpenCore (0.6.9)
+=======
+* OpenCore (0.7.0)
+>>>>>>> aec5c17 (Opencore 0.7.0)
 * Supported OS
     * macOS Big Sur (11.4)
     * macOS Catalina (10.15)
@@ -48,9 +49,20 @@ Update the following settings in BIOS:
 * Audio - Internal Speaker, Displayport/HDMI, and front audio port
 * Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
 
+<<<<<<< HEAD
 ## What doesn't work
 
 * Displayport audio stops working (disappears from Sound devices) after waking up from sleep
+=======
+## What's not working
+
+Nothing!
+
+
+## Notes
+* HDMI/Displayport audio device would disappear after waking up from sleep.  This was resolved by [adding my monitor's EDID](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/edid-gen.sh) to Opencore.
+
+>>>>>>> aec5c17 (Opencore 0.7.0)
 
 ## Tested Configuration
 
@@ -62,11 +74,13 @@ Update the following settings in BIOS:
 | Ethernet  | Intel I219-LM                      |
 | NVME      | WD SN550 (2)                       |
 | HDD       | ST2000LM007 (Fusion drive)         |
+| Display   | LG 43UD79-B 4K Monitor             |
 | Memory    | Crucial 32GB Kit (16GB x 2) DDR4 3200 MT/s (PC4-25600) |
 | Sound     | ALC3246 (ALC256)                   |
 | Wireless  | BCM94360NG                         |
 
 
-
+# Links
+* [dell-precision-3240-compact-hackintosh](https://github.com/billzhong/dell-precision-3240-compact-hackintosh/)
 
 
