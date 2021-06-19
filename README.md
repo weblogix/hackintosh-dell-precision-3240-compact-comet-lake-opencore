@@ -7,7 +7,6 @@
     * macOS Big Sur (11.4)
     * macOS Catalina (10.15)
 * All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
-* CPU Low Frequency mode set to `800Mhz` (via `CPUFriendFriend`) 
 * Intel UHD Graphics 630 - 4K UHD @ 60hz (Displayport)
 * Full Metal hardware acceleration
 * Sleep, wake and power nap
