@@ -8,6 +8,7 @@
     * macOS Catalina (10.15)
 * All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
 * Intel UHD Graphics 630 - 4K UHD @ 60hz (Displayport)
+* CPU Low Frequency mode set to `800Mhz` (via `CPUFriendDataProvider`) 
 * Full Metal hardware acceleration
 * Sleep, wake and power nap
 * Audio - Internal Speaker, Displayport/HDMI, and front audio port
