@@ -289,6 +289,17 @@
 				<data>
 				BwCbPg==
 				</data>
+				<key>AAPL00,override-no-connect</key>
+				<data>
+				AP///////wAebXycE6sEAAocAQS1PCJgnm+xp1VMniUM
+				UFQhCABxQIGAgcCpwNHAgQABAQEBTdAAoPBwPoAwIGUM
+				WFQhAAAaKGgAoPBwPoAIkGUMWFQhAAAaAAAA/QA4PR6H
+				OAAKICAgICAgAAAA/ABMRyBVbHRyYSBIRAogAYcCAxFx
+				RJAEAwEjCQcHgwEAAAI6gBhxOC1AWCxFAFhUIQAAHlZe
+				AKCgoClQMCA1AFhUIQAAGgAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyA==
+				</data>
 				<key>device-id</key>
 				<data>
 				kj4AAA==
@@ -534,6 +545,24 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>USBPorts.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -764,7 +793,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 igfxonln=1</string>
+				<string>-v keepsyms=1 debug=0x100</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==
