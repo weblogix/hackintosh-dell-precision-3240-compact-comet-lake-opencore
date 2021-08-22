@@ -1,5 +1,6 @@
 # Hackintosh on Dell Precision 3240 Compact PC (OpenCore) Comet-lake
 
+<<<<<<< HEAD
 ## What works
 
 * OpenCore (0.7.0)
@@ -17,6 +18,9 @@
 ## What's not working
 
 Nothing!
+=======
+Originally forked from [dell-precision-3240-compact-hackintosh](https://github.com/billzhong/dell-precision-3240-compact-hackintosh/) and modified with my own preferred settings.
+>>>>>>> 03ae924 (OC 0.7.2)
 
 ## Installation
 
@@ -50,9 +54,23 @@ Update the following settings in BIOS:
 | VT for Direct I/O | Disabled          |
 
 
-## Notes
-* HDMI/Displayport audio device would disappear after waking up from sleep.  This was resolved by [adding my monitor's EDID](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/edid-gen.sh) to Opencore.
 
+## What works
+
+* OpenCore (0.7.2)
+* Supported OS
+    * macOS Big Sur (11.5.2)
+    * macOS Catalina (10.15)
+* All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
+* Intel UHD Graphics 630 - 4K UHD @ 60hz (Displayport)
+* Full Metal hardware acceleration
+* Sleep, wake and power nap
+* Audio - Internal Speaker, Displayport/HDMI, and front audio port
+* Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
+
+## What doesn't work
+
+* Displayport audio stops working (disappears from Sound devices) after waking up from sleep
 
 ## Tested Configuration
 
@@ -64,13 +82,37 @@ Update the following settings in BIOS:
 | Ethernet  | Intel I219-LM                      |
 | NVME      | WD SN550 (2)                       |
 | HDD       | ST2000LM007 (Fusion drive)         |
-| Display   | LG 43UD79-B 4K Monitor             |
 | Memory    | Crucial 32GB Kit (16GB x 2) DDR4 3200 MT/s (PC4-25600) |
 | Sound     | ALC3246 (ALC256)                   |
 | Wireless  | BCM94360NG                         |
 
 
-# Links
-* [dell-precision-3240-compact-hackintosh](https://github.com/billzhong/dell-precision-3240-compact-hackintosh/)
+## Post Install
 
+### Power management Settings
+
+Disable hibernation, act like a real mac
+
+```
+sudo pmset standby 0
+sudo pmset autopoweroff 0 
+sudo pmset proximitywake 0
+sudo pmset powernap 0 
+sudo pmset tcpkeepalive 0
+sudo pmset womp 0
+sudo pmset hibernatemode 0
+```
+
+Delete the sleepimage file and block MacOS from creating it again.
+
+```
+sudo rm /var/vm/sleepimage
+sudo mkdir /var/vm/sleepimage
+```
+
+
+## Credits
+
+* https://github.com/billzhong/dell-precision-3240-compact-hackintosh
+* https://github.com/zearp/Nucintosh
 
