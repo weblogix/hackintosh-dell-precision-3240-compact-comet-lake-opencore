@@ -1,6 +1,6 @@
 # Hackintosh on Dell Precision 3240 Compact PC (OpenCore) Comet-lake
 
-# Changelog
+## Changelog
 
 2021-09-25
 * Updated to OpenCore 0.7.4 (2021-09-23)
