@@ -1,9 +1,16 @@
 # Hackintosh on Dell Precision 3240 Compact PC (OpenCore) Comet-lake
 
-<<<<<<< HEAD
+# Changelog
+
+2021-09-25
+* Updated to OpenCore 0.7.4 (2021-09-23)
+* Dell BIOS 1.16.0
+* Removed `FakePCIID.kext` and `FakePCIID_Intel_HDMI_Audio.kext` (HDMI audio no longer required)
+
+
 ## What works
 
-* OpenCore (0.7.0)
+* OpenCore (0.7.4)
 * Supported OS
     * macOS Big Sur (11.4)
     * macOS Catalina (10.15)
@@ -15,12 +22,6 @@
 * Audio - Internal Speaker, Displayport/HDMI, and front audio port
 * Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
 
-## What's not working
-
-Nothing!
-=======
-Originally forked from [dell-precision-3240-compact-hackintosh](https://github.com/billzhong/dell-precision-3240-compact-hackintosh/) and modified with my own preferred settings.
->>>>>>> 03ae924 (OC 0.7.2)
 
 ## Installation
 
@@ -32,6 +33,8 @@ Originally forked from [dell-precision-3240-compact-hackintosh](https://github.c
     * PlatformInfo --> Generic --> SystemUUID
 
 ## Bios Settings
+
+Tested with BIOS version 1.16.0
 
 Update the following settings in BIOS with [RU.exe](http://ruexe.blogspot.com/) or [bios-extraction-guide (Dell)](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell)
 
@@ -45,46 +48,28 @@ Update the following settings in BIOS:
 
 | Item              | Value             |
 | ----------------- | ----------------- |
-| Intergrated NIC   | Enabled           |
-| SATA Operation    | AHCI              |
-| Primary Display   | Intel HD Graphics |
-| TPM               | Disabled          |
-| Secure Boot       | Disabled          |
-| Intel SGX         | Disabled          |
-| VT for Direct I/O | Disabled          |
-
-
-
-## What works
-
-* OpenCore (0.7.2)
-* Supported OS
-    * macOS Big Sur (11.5.2)
-    * macOS Catalina (10.15)
-* All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
-* Intel UHD Graphics 630 - 4K UHD @ 60hz (Displayport)
-* Full Metal hardware acceleration
-* Sleep, wake and power nap
-* Audio - Internal Speaker, Displayport/HDMI, and front audio port
-* Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
-
-## What doesn't work
-
-* Displayport audio stops working (disappears from Sound devices) after waking up from sleep
-
-## Tested Configuration
-
-| Component | Tested                             |
-| --------- | ---------------------------------- |
-| CPU       | Core i5 10500                      |
-| Chipset   | Intel W480                         |
-| Graphics  | Intel UHD 630                      |
-| Ethernet  | Intel I219-LM                      |
-| NVME      | WD SN550 (2)                       |
-| HDD       | ST2000LM007 (Fusion drive)         |
-| Memory    | Crucial 32GB Kit (16GB x 2) DDR4 3200 MT/s (PC4-25600) |
-| Sound     | ALC3246 (ALC256)                   |
-| Wireless  | BCM94360NG                         |
+| **System Configuration** |
+| Memory Map IO above 4GB | Enabled |
+| **Security** |
+| TPM 2.0 Security               | Disabled          |
+| **Secure Boot** |
+| Secure Boot Enable       | Disabled          |
+| **Intel Software Guard Extensions** |
+| Intel SGX Enable         | Disabled          |
+| **Performance** |
+| Intel SpeedStep | Enabled |
+| C-States Control | Enabled | 
+| Cache Prefetch | Hardware Prefetched - Enabled |
+| | Adjacent Cache Prefetcher - Enabled |
+| Intel Turbo Boost | Enabled |
+| HyperThread Control | Enabled |
+| Enable Intel Speed Shift Technology | Enabled |
+| **Power Management** |
+| Deep Sleep Control | Enabled in S4 and S5 |
+| USB Wake Support | Disabled |
+| **Virtualization** |
+| Virtualization | Enabled |
+| VT for Direct I/O | Enabled          |
 
 
 ## Post Install
