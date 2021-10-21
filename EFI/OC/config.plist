@@ -243,6 +243,13 @@
 				<data>
 				BwCbPg==
 				</data>
+				<key>AAPL00,override-no-connect</key>
+				<data>
+				AP///////wAebQlbE6sEAAocAQS1PCJ4hjA1p1VOoyYP
+				UFQhCABxQIGAgcCpwNHAgQABAQEBTdAAoPBwPoAwIGUM
+				WFQhAAAaKGgAoPBwPoAIkGUMWFQhAAAaAAAA/QA4PR6H
+				OAAKICAgICAgAAAA/ABMRyBVbHRyYSBIRAogAOw=
+				</data>
 				<key>enable-hdmi-dividers-fix</key>
 				<data>
 				AQAAAA==
@@ -732,7 +739,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>j174</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1017,7 +1024,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>ext4_x64.efi</string>
+				<string>OpenLinuxBoot.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
