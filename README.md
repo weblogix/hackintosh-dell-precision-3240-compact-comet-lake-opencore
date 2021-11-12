@@ -1,17 +1,10 @@
 # Hackintosh on Dell Precision 3240 Compact PC (OpenCore) Comet-lake
 
-## Changelog
-
-2021-09-25
-* Updated to OpenCore 0.7.4 (2021-09-23)
-* Dell BIOS 1.16.0
-* Removed `FakePCIID.kext` and `FakePCIID_Intel_HDMI_Audio.kext` (HDMI audio no longer required)
-
-
 ## What works
 
-* OpenCore (0.7.4)
+* OpenCore (0.7.5)
 * Supported OS
+    * macOS Monterey (12.0)
     * macOS Big Sur (11.4)
     * macOS Catalina (10.15)
 * All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
@@ -19,9 +12,20 @@
 * CPU Low Frequency mode set to `800Mhz` (via `CPUFriendDataProvider`) 
 * Full Metal hardware acceleration
 * Sleep, wake and power nap
-* Audio - Internal Speaker, Displayport/HDMI, and front audio port
+* Audio - Internal Speaker and front audio port
 * Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
 
+## Changelog
+
+### 2021-11-22
+* Upgraded to OpenCore 0.7.5
+* Removed `CPUFriendDataProvider` as it was causing issues with CPU fan speeds and also wake-up time.  It is also recommended to install a fan control app (eg. [smcFanControl](https://github.com/hholtmann/smcFanControl)) and increase to max to help decrease temps.
+* Added `AirportBrcmFixup.kext` which seemed to fix some bluetooth issues (eg. slow cursor with magic mouse)
+
+### 2021-09-25
+* Updated to OpenCore 0.7.4 (2021-09-23)
+* Dell BIOS 1.16.0
+* Removed `FakePCIID.kext` and `FakePCIID_Intel_HDMI_Audio.kext` (HDMI audio no longer required)
 
 ## Installation
 
