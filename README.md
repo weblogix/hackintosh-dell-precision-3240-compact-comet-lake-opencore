@@ -2,20 +2,23 @@
 
 ## What works
 
-* OpenCore (0.7.5)
+* OpenCore (0.7.6)
 * Supported OS
     * macOS Monterey (12.0)
     * macOS Big Sur (11.4)
     * macOS Catalina (10.15)
 * All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
 * Intel UHD Graphics 630 - 4K UHD @ 60hz (Displayport)
-* CPU Low Frequency mode set to `800Mhz` (via `CPUFriendDataProvider`) 
 * Full Metal hardware acceleration
 * Sleep, wake and power nap
 * Audio - Internal Speaker and front audio port
 * Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
 
 ## Changelog
+
+### 2021-12-07
+* Upgraded to OpenCore 0.7.6
+* Updated kexts
 
 ### 2021-11-22
 * Upgraded to OpenCore 0.7.5
