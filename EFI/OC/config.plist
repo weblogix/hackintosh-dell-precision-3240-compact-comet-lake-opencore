@@ -243,79 +243,17 @@
 				<data>
 				BwCbPg==
 				</data>
-				<key>AAPL00,override-no-connect</key>
+				<key>device-id</key>
 				<data>
-				AP///////wAebQlbE6sEAAocAQS1PCJ4hjA1p1VOoyYP
-				UFQhCABxQIGAgcCpwNHAgQABAQEBTdAAoPBwPoAwIGUM
-				WFQhAAAaKGgAoPBwPoAIkGUMWFQhAAAaAAAA/QA4PR6H
-				OAAKICAgICAgAAAA/ABMRyBVbHRyYSBIRAogAOw=
+				mz4AAA==
 				</data>
-				<key>enable-hdmi-dividers-fix</key>
+				<key>framebuffer-patch-enable	</key>
 				<data>
 				AQAAAA==
 				</data>
-				<key>enable-lspcon-support</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>enable-max-pixel-clock-override</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>force-online</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con0-alldata</key>
-				<data>
-				AQUJAAAEAADHAwAA
-				</data>
-				<key>framebuffer-con0-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con0-has-lspcon</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con0-preferred-lspcon-mode</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con1-alldata</key>
-				<data>
-				AgQKAAAEAADHAwAA
-				</data>
-				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con1-has-lspcon</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con1-preferred-lspcon-mode</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-fbmem</key>
-				<data>
-				AAAAAw==
-				</data>
-				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>
-				AAAAgA==
-				</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>igfxfw</key>
-				<data>
-				AgAAAA==
-				</data>
+				<key>framebuffer-stolenmem	</key>
+				<string>00003001
+</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
