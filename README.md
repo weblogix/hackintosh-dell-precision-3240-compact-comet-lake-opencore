@@ -18,6 +18,7 @@
 
 ### 2021-12-07
 * Upgraded to OpenCore 0.7.6
+* Added [FeatureUnlock](https://github.com/acidanthera/FeatureUnlock) to unlock locked features (eg. AirPlay to Mac Unlock) in Monterey
 * Updated kexts
 
 ### 2021-11-22
