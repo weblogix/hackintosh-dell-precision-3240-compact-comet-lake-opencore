@@ -2,9 +2,9 @@
 
 ## What works
 
-* OpenCore (0.7.6)
+* OpenCore (0.8.0)
 * Supported OS
-    * macOS Monterey (12.0)
+    * macOS Monterey (12.3)
     * macOS Big Sur (11.4)
     * macOS Catalina (10.15)
 * All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
@@ -16,6 +16,12 @@
 
 ## Changelog
 
+### 2022-06-08
+* Upgraded to OpenCore 0.8.0
+* BIOS 1.11.0
+* Mac OS Monterey 12.3
+
+1.11.0
 ### 2021-12-07
 * Upgraded to OpenCore 0.7.6
 * Added [FeatureUnlock](https://github.com/acidanthera/FeatureUnlock) to unlock locked features (eg. AirPlay to Mac Unlock) in Monterey
