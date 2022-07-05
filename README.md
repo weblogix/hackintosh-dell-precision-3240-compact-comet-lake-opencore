@@ -2,7 +2,7 @@
 
 ## What works
 
-* OpenCore (0.8.1)
+* OpenCore (0.8.2)
 * Supported OS
     * macOS Monterey (12.3)
     * macOS Big Sur (11.4)
@@ -15,6 +15,11 @@
 * Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
 
 ## Changelog
+
+### 2022-07-05
+* Upgraded to OpenCore 0.8.2
+* Updated Kexts
+* Removed AirportBrcmFixup (didn't notice any difference without it)
 
 ### 2022-06-12
 * Upgraded to OpenCore 0.8.1
