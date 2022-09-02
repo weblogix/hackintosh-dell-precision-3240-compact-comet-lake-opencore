@@ -2,9 +2,9 @@
 
 ## What works
 
-* OpenCore (0.8.2)
+* OpenCore (0.8.3)
 * Supported OS
-    * macOS Monterey (12.3)
+    * macOS Monterey (12.5.1)
     * macOS Big Sur (11.4)
     * macOS Catalina (10.15)
 * All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
@@ -13,39 +13,6 @@
 * Sleep, wake and power nap
 * Audio - Internal Speaker and front audio port
 * Airplay, Sidecard, Continuity, Airdrop, Facetime, iMessage and Handoff - If you have the right Wifi card (tested with BCM94360NG M.2 Wifi Card)
-
-## Changelog
-
-### 2022-07-05
-* Upgraded to OpenCore 0.8.2
-* Updated Kexts
-* Removed AirportBrcmFixup (didn't notice any difference without it)
-
-### 2022-06-12
-* Upgraded to OpenCore 0.8.1
-* Retained NVRAM reset 
-* Updated Kexts
-
-
-### 2022-06-08
-* Upgraded to OpenCore 0.8.0
-* BIOS 1.11.0
-* Mac OS Monterey 12.3
-
-### 2021-12-07
-* Upgraded to OpenCore 0.7.6
-* Added [FeatureUnlock](https://github.com/acidanthera/FeatureUnlock) to unlock locked features (eg. AirPlay to Mac Unlock) in Monterey
-* Updated kexts
-
-### 2021-11-22
-* Upgraded to OpenCore 0.7.5
-* Removed `CPUFriendDataProvider` as it was causing issues with CPU fan speeds and also wake-up time.  It is also recommended to install a fan control app (eg. [smcFanControl](https://github.com/hholtmann/smcFanControl)) and increase to max to help decrease temps.
-* Added `AirportBrcmFixup.kext` which seemed to fix some bluetooth issues (eg. slow cursor with magic mouse)
-
-### 2021-09-25
-* Updated to OpenCore 0.7.4 (2021-09-23)
-* Dell BIOS 1.16.0
-* Removed `FakePCIID.kext` and `FakePCIID_Intel_HDMI_Audio.kext` (HDMI audio no longer required)
 
 ## Installation
 
@@ -118,6 +85,44 @@ Delete the sleepimage file and block MacOS from creating it again.
 sudo rm /var/vm/sleepimage
 sudo mkdir /var/vm/sleepimage
 ```
+
+
+## Changelog
+
+### 2022-09-02
+* Upgraded to OpenCore 0.8.3
+* Changed SMBIOS to match `Macmini8,1` - Testing
+* Regenerated USB Map (`USBMap.kext`) - it's been awhile since I did this. Seems stable so far
+
+### 2022-07-05
+* Upgraded to OpenCore 0.8.2
+* Updated Kexts
+* Removed AirportBrcmFixup (didn't notice any difference without it)
+
+### 2022-06-12
+* Upgraded to OpenCore 0.8.1
+* Retained NVRAM reset 
+* Updated Kexts
+
+### 2022-06-08
+* Upgraded to OpenCore 0.8.0
+* BIOS 1.11.0
+* Mac OS Monterey 12.3
+
+### 2021-12-07
+* Upgraded to OpenCore 0.7.6
+* Added [FeatureUnlock](https://github.com/acidanthera/FeatureUnlock) to unlock locked features (eg. AirPlay to Mac Unlock) in Monterey
+* Updated kexts
+
+### 2021-11-22
+* Upgraded to OpenCore 0.7.5
+* Removed `CPUFriendDataProvider` as it was causing issues with CPU fan speeds and also wake-up time.  It is also recommended to install a fan control app (eg. [smcFanControl](https://github.com/hholtmann/smcFanControl)) and increase to max to help decrease temps.
+* Added `AirportBrcmFixup.kext` which seemed to fix some bluetooth issues (eg. slow cursor with magic mouse)
+
+### 2021-09-25
+* Updated to OpenCore 0.7.4 (2021-09-23)
+* Dell BIOS 1.16.0
+* Removed `FakePCIID.kext` and `FakePCIID_Intel_HDMI_Audio.kext` (HDMI audio no longer required)
 
 
 ## Credits
