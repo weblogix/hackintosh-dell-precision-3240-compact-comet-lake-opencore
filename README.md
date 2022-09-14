@@ -2,9 +2,9 @@
 
 ## What works
 
-* OpenCore (0.8.3)
+* OpenCore (0.8.4)
 * Supported OS
-    * macOS Monterey (12.5.1)
+    * macOS Monterey (12.6)
     * macOS Big Sur (11.4)
     * macOS Catalina (10.15)
 * All USB Ports at full speed (USB 3.2) (via Custom USB Mapping)
@@ -88,6 +88,10 @@ sudo mkdir /var/vm/sleepimage
 
 
 ## Changelog
+
+### 2022-09-14
+* Upgraded to OpenCore 0.8.4
+* Restored previous `USBPorts.kext` for USB Mapping.  There were some USB performance issues that I noticed with the previous `USBMap.kext`
 
 ### 2022-09-02
 * Upgraded to OpenCore 0.8.3
