@@ -2,8 +2,9 @@
 
 ## What works
 
-* OpenCore (0.8.4)
+* OpenCore (0.8.6)
 * Supported OS
+    * macOS Ventura (13.0.1)
     * macOS Monterey (12.6)
     * macOS Big Sur (11.4)
     * macOS Catalina (10.15)
@@ -88,6 +89,10 @@ sudo mkdir /var/vm/sleepimage
 
 
 ## Changelog
+
+### 2022-11-15
+* Upgraded to OpenCore 0.8.6
+* macOS Ventura supported (13.0.1)
 
 ### 2022-09-14
 * Upgraded to OpenCore 0.8.4
